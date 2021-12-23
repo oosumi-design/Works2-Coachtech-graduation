@@ -1,0 +1,216 @@
+$color-222:#222;
+$color-yellow:#FFD200;
+$color-navy:#324556;
+$color-white:#fff;
+$color-blue:#00859B;
+$color-lightblue:#ABC5D6;
+$color-gray:rgba($color:#00859B,$alpha:0.1);
+
+.service-about{
+  &-catch{
+    text-align: center;
+    &-main{
+      line-height: 1.8em;
+      font-size: 1.5em;
+      margin-bottom: 1%;
+      &-l{
+        font-size: 1.2em;
+        border-bottom: 1px solid #222;
+        margin: 2%;
+      }
+    }
+    &-sub{
+      line-height: 1.8em;
+      font-size: 1.2em;
+      margin-bottom: 60px;
+    }
+  }
+}
+
+.counseling{
+  background-color: $color-gray;
+  padding: 60px 0;
+  text-align: center;
+  &-title{
+    &-main{
+      margin-bottom: 30px;
+      line-height: 1.8em;
+      font-size: 1.5em;
+    }
+    &-btn{
+      padding: 0 20px;
+    }
+  }
+}
+
+.coachtech{
+  padding-bottom: 60px;
+  &-flex{
+    display: flex;
+    justify-content: space-between;
+    &-container{
+      text-align: center;
+      &-desc{
+        font-size: 1.5em;
+        padding-bottom: 10px;
+        &-1st{
+          margin-top: 1.8%;
+        }
+        &-large{
+          font-size: 2em;
+          margin-left: 2%;
+          margin-right: 2%;
+          font-weight: bold;
+          color: $color-navy;
+        }
+        &-p{  //話題のプログラミングスクール部分
+          font-size: 1.2em;
+          &-large{
+            font-size: 2em;
+            font-weight: bold;
+            margin-left: 2%;
+            color: $color-navy;
+          }
+        }
+      }
+      &-video{
+        margin-top:5% ;
+        width: 70%;
+        height: 70%;
+      }
+    }
+    &-container:not(:last-child){
+      margin-right: 1%;
+    }
+  }
+}
+
+.feature{
+  padding-bottom: 60px;
+  background-color: $color-gray;
+  &-flex{
+    display: flex;
+    justify-content: space-between;
+    &-container{
+      width: 33%;
+      background-color: $color-white;
+      &-num{
+        text-align: center;
+        padding: 8%;
+        font-size: 1.5em;
+      }
+      &-img{
+        width: 80%;
+        margin: auto;
+      }
+      &-desc{
+        text-align: center;
+        font-size: 1.2em;
+        line-height: 1.2em;
+        padding: 30px 0;
+      }
+    }
+    &-container:not(:last-child){
+      margin-right: 1%;
+
+    }
+  }
+}
+
+.stagee{
+  padding-bottom: 60px;
+  &-desc{
+    border-radius: 20px;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 2em;
+    &-img{
+      width: 30%;
+    }
+    &-p{
+      margin-bottom: 30px;
+    }
+    &-soon{
+      margin-top: 30px;
+    }
+
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .feature{
+    &-flex{
+      flex-direction: column;
+      &-container{
+        width: 100%;
+      }
+      &-container:not(:last-child){
+        margin-bottom: 5%;
+      }
+    }
+  }
+
+  .stagee{
+    &-desc{
+      font-size: 1em;
+      &-p{
+        margin-bottom: 4%;
+      }
+      &-soon{
+        margin-top: 4%;
+      }
+    }
+  }
+}//@media768px
+
+@media screen and (max-width: 375px) {
+  .service-about{
+    &-catch{
+      &-main{
+        font-size: 1.2em;
+      }
+      &-sub{
+        font-size: 1em;
+      }
+    }
+  }
+  .counseling{
+    &-title{
+      &-main{
+        font-size: 1.2em;
+
+      }
+    }
+  }
+  .coachtech{
+    &-flex{
+      &-container{
+        &-desc{
+          font-size: 1em;
+          &-1st{
+            font-size: .9em;
+          }
+        }
+      }
+    }
+  }
+  .feature{
+    &-flex{
+      &-container{
+        &-desc{
+          font-size: 1em;
+        }
+      }
+    }
+  }
+  .stagee{
+    &-desc{
+      &-p{
+        line-height: 1.5em;
+      }
+      &-img{
+        width: 80%;
+      }
+    }
+  }
+}//@media375px

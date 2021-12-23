@@ -1,0 +1,255 @@
+$color-222:#222;
+$color-yellow:#FFD200;
+$color-navy:#324556;
+$color-white:#fff;
+$color-blue:#00859B;
+$color-lightblue:#ABC5D6;
+$color-gray:rgba($color:#00859B,$alpha:0.1);
+
+.recruit{
+  &-title{
+    padding-top: 60px;
+    text-align: center;
+    &-main{
+      font-size: 1.5em;
+      padding-top: 5%;
+      margin-bottom: 3%;
+      &-line{
+        margin-left: 80px;
+      }
+    }
+    &-sub{
+      font-size: 1.2em;
+      margin-bottom: 60px;
+    }
+  }
+
+  &-container{
+    &-flex{
+      display: flex;
+      &-title{ //新卒採用タイトル
+        padding: 0 5%;
+        text-align: center;
+        &-freshers::before{
+          content: "Freshers\A";
+          white-space: pre;
+          font-family: "Satisfy","メイリオ";
+          font-weight: lighter;
+          position: relative;
+          left: -50px;
+          bottom: -10px;
+          color: rgba($color: gray, $alpha: 0.2);
+        }
+        &-mid::before{
+          content: "Mid-carrier\A";
+          white-space: pre;
+          font-family: "Satisfy","メイリオ";
+          font-weight: lighter;
+          position: relative;
+          left: -50px;
+          bottom: -10px;
+          color: rgba($color: gray, $alpha: 0.2);
+        }
+      }
+      &-imgs{
+        width: 60%;
+      }
+    }
+  }
+}
+
+.recruitment{
+  &-btn{
+    text-align: center;
+    margin-top: 30px;
+  }
+  &-flex{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    &-container{
+      width: calc(100% / 3);
+      background-color: $color-gray;
+      padding: 5%;
+      &-title{
+        &-job{
+          text-align: center;
+          padding-bottom: 5%;
+          font-size: 1.5em;
+          border-bottom: 1px solid $color-222;
+        }
+        &-details{
+          line-height: 1.2em;
+          margin-top: 5%;
+          margin-bottom: 30%;
+        }
+      }
+      &-desc{
+        &-title{
+          margin: 5% 0;
+        }
+      }
+    }
+    &-container:not(:last-child){
+      margin-right: 1%;
+    }
+  }
+}
+
+.interview{
+  &-title{
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  &-flex{
+    display: flex;
+    flex-wrap: wrap;
+    &-link{
+      cursor: pointer;
+      position: relative;
+      width: 32%;
+      margin-right: 1%;
+      margin-bottom: 1%;
+      &-desc{
+        padding-top: 15% ;
+        text-align: center;
+        color: $color-white;
+        &-name{
+          font-size: 1.5em;
+          margin: 5% 0;
+        }
+      }
+    }
+    .mask{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      background-color: rgba(0,0,0,0.4);
+      transition: all 0.2s;
+    }
+    &-link:hover .mask{
+      opacity: 1;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .recruit{
+    &-container{
+      &-flex{
+        flex-direction: column;
+        &-title{
+          width: 100%;
+          padding: 0;
+          padding-bottom: 5%;
+        }
+        &-midcarrier{
+          flex-direction: column-reverse;
+        }
+      }
+    }
+  }
+
+  .recruitment{
+    &-flex{
+      flex-direction: column;
+      &-container{
+        width:90% ;
+        &-title{
+          &-details{
+            margin-bottom: 4%;
+          }
+        }
+      }
+      &-container:not(:last-child){
+        margin-bottom: 5%;
+      }
+    }
+  }
+
+  .interview{
+    background-color: $color-white;
+    &-title{
+      text-align: center;
+      padding-bottom: 60px;
+    }
+    &-flex{
+      display: flex;
+      flex-wrap: nowrap;
+      padding: 0 0 30px 30px;
+      overflow-x: scroll;
+      margin: auto;
+      &-link{
+        width: calc((100% - 70px) / 3);
+        flex: 0 0 auto;
+        position: relative;
+        &-desc{
+          padding-top: 8% ;
+          text-align: center;
+          color: $color-white;
+          &-name{
+            font-size: 1.2em;
+            margin: 5% 0;
+          }
+        }
+      }
+      &-link:not(:first-child){
+        margin-left: 1%;
+      }
+      .mask{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        background-color: rgba(0,0,0,0.4);
+        transition: all 0.2s;
+      }
+      &-link:hover .mask{
+        opacity: 1;
+      }
+    }
+  }
+
+  .interview-flex::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+    &-track{
+      width: 100%;
+      margin-left: 30px;
+      margin-right: 3%;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: inset 0 0 2px gray;
+    }
+    &-thumb{
+      background: $color-blue;
+      border-radius: 10px;
+    }
+  }
+}//@media768px
+
+@media screen and (max-width: 375px) {
+  .interview{
+    &-flex{
+      width: 100%;
+      &-link{
+        width: calc((100% - 70px) / 1);
+      }
+    }
+  }
+  .interview-flex::-webkit-scrollbar{
+    &-track{
+      width: 100%;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+  }
+}//@media375px

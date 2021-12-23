@@ -1,0 +1,196 @@
+.service-about-catch {
+  text-align: center;
+}
+
+.service-about-catch-main {
+  line-height: 1.8em;
+  font-size: 1.5em;
+  margin-bottom: 1%;
+}
+
+.service-about-catch-main-l {
+  font-size: 1.2em;
+  border-bottom: 1px solid #222;
+  margin: 2%;
+}
+
+.service-about-catch-sub {
+  line-height: 1.8em;
+  font-size: 1.2em;
+  margin-bottom: 60px;
+}
+
+.counseling {
+  background-color: rgba(0, 133, 155, 0.1);
+  padding: 60px 0;
+  text-align: center;
+}
+
+.counseling-title-main {
+  margin-bottom: 30px;
+  line-height: 1.8em;
+  font-size: 1.5em;
+}
+
+.counseling-title-btn {
+  padding: 0 20px;
+}
+
+.coachtech {
+  padding-bottom: 60px;
+}
+
+.coachtech-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.coachtech-flex-container {
+  text-align: center;
+}
+
+.coachtech-flex-container-desc {
+  font-size: 1.5em;
+  padding-bottom: 10px;
+}
+
+.coachtech-flex-container-desc-1st {
+  margin-top: 1.8%;
+}
+
+.coachtech-flex-container-desc-large {
+  font-size: 2em;
+  margin-left: 2%;
+  margin-right: 2%;
+  font-weight: bold;
+  color: #324556;
+}
+
+.coachtech-flex-container-desc-p {
+  font-size: 1.2em;
+}
+
+.coachtech-flex-container-desc-p-large {
+  font-size: 2em;
+  font-weight: bold;
+  margin-left: 2%;
+  color: #324556;
+}
+
+.coachtech-flex-container-video {
+  margin-top: 5%;
+  width: 70%;
+  height: 70%;
+}
+
+.coachtech-flex-container:not(:last-child) {
+  margin-right: 1%;
+}
+
+.feature {
+  padding-bottom: 60px;
+  background-color: rgba(0, 133, 155, 0.1);
+}
+
+.feature-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature-flex-container {
+  width: 33%;
+  background-color: #fff;
+}
+
+.feature-flex-container-num {
+  text-align: center;
+  padding: 8%;
+  font-size: 1.5em;
+}
+
+.feature-flex-container-img {
+  width: 80%;
+  margin: auto;
+}
+
+.feature-flex-container-desc {
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  padding: 30px 0;
+}
+
+.feature-flex-container:not(:last-child) {
+  margin-right: 1%;
+}
+
+.stagee {
+  padding-bottom: 60px;
+}
+
+.stagee-desc {
+  border-radius: 20px;
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 2em;
+}
+
+.stagee-desc-img {
+  width: 30%;
+}
+
+.stagee-desc-p {
+  margin-bottom: 30px;
+}
+
+.stagee-desc-soon {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .feature-flex {
+    flex-direction: column;
+  }
+  .feature-flex-container {
+    width: 100%;
+  }
+  .feature-flex-container:not(:last-child) {
+    margin-bottom: 5%;
+  }
+  .stagee-desc {
+    font-size: 1em;
+  }
+  .stagee-desc-p {
+    margin-bottom: 4%;
+  }
+  .stagee-desc-soon {
+    margin-top: 4%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .service-about-catch-main {
+    font-size: 1.2em;
+  }
+  .service-about-catch-sub {
+    font-size: 1em;
+  }
+  .counseling-title-main {
+    font-size: 1.2em;
+  }
+  .coachtech-flex-container-desc {
+    font-size: 1em;
+  }
+  .coachtech-flex-container-desc-1st {
+    font-size: .9em;
+  }
+  .feature-flex-container-desc {
+    font-size: 1em;
+  }
+  .stagee-desc-p {
+    line-height: 1.5em;
+  }
+  .stagee-desc-img {
+    width: 80%;
+  }
+}
